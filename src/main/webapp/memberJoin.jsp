@@ -9,7 +9,7 @@
 <body>
 	<h2>abc 스쿨 회원가입</h2>
 	<hr>
-	<form action="memberJoinOk.jsp">
+	<form action="memberJoinOk.jsp" method="post">
 		이름 : <input type="text" name="sname"><br><br>
 		학년 : <input type="text" name="sgrade"><br><br>	
 		주소 : <input type="text" name="saddr"><br><br>
