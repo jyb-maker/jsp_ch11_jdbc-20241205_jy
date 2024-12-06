@@ -32,12 +32,13 @@
 			stmt = conn.createStatement();
 			
 			rs = stmt.executeQuery(sql);//ResultSet 객체(rs)로 반환되는 값을 받아야 함
+			// 초기 값 설정 ↓
 			int hakbun = 0;
 			String name = "";
 			String addr = "";
 			int grade = 0;
 			
-			while(rs.next()) {
+			while(rs.next()) { // (→): next: DB로 부터 반환 받은 레코드의 개수 만큼 반복된다.  
 				hakbun = rs.getInt("hakbun");//학번
 				name = rs.getString("name");//이름				
 				addr = rs.getString("address");//주소
