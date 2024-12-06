@@ -32,7 +32,7 @@
 			stmt = conn.createStatement();
 			
 			rs = stmt.executeQuery(sql);//ResultSet 객체(rs)로 반환되는 값을 받아야 함
-			// 초기 값 설정 ↓
+			// 초기 값 설정 ↓ : while문 밖에 선언
 			int hakbun = 0;
 			String name = "";
 			String addr = "";
